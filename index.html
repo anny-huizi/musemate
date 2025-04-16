@@ -669,6 +669,42 @@
                                     <div class="card border-0 mb-4">
                                         <div class="card-body p-0">
                                             <div class="d-flex align-items-center mb-2">
+                                                <i class="fas fa-tshirt me-2" style="color: var(--primary);"></i>
+                                                <h5 class="mb-0">Coat Check</h5>
+                                            </div>
+                                            <p class="mb-0">Coat check is available near the entrance for your convenience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="card border-0 mb-4">
+                                        <div class="card-body p-0">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fas fa-camera me-2" style="color: var(--primary);"></i>
+                                                <h5 class="mb-0">Photography</h5>
+                                            </div>
+                                            <p class="mb-0">Photography is allowed without flash in most galleries.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="card border-0 mb-4">
+                                        <div class="card-body p-0">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fas fa-check-circle me-2" style="color: var(--primary);"></i>
+                                                <h5 class="mb-0">Avoid Crowds</h5>
+                                            </div>
+                                            <p class="mb-0">Visit early in the morning to avoid crowds, especially on weekends.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="card border-0 mb-4">
+                                        <div class="card-body p-0">
+                                            <div class="d-flex align-items-center mb-2">
                                                 <i class="fas fa-users me-2" style="color: var(--primary);"></i>
                                                 <h5 class="mb-0">Free Tours</h5>
                                             </div>
@@ -742,194 +778,6 @@
     </footer>
 
     <!-- JavaScript for functionality -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Update duration value display
-        const durationSlider = document.getElementById('duration');
-        const durationValue = document.getElementById('durationValue');
-        
-        durationSlider.addEventListener('input', function() {
-            durationValue.textContent = this.value + ' hours';
-        });
-        
-        // Form submission handler
-        const routeForm = document.getElementById('routeForm');
-        const routeResults = document.getElementById('routeResults');
-        const noRouteResults = document.getElementById('noRouteResults');
-        const selectedMuseum = document.getElementById('selectedMuseum');
-        
-        routeForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get museum name
-            const museumSelect = document.getElementById('museum');
-            const museumName = museumSelect.options[museumSelect.selectedIndex].text;
-            selectedMuseum.textContent = museumName;
-            
-            // Show results
-            routeResults.classList.remove('d-none');
-            noRouteResults.classList.add('d-none');
-            
-            // In a real app, this would make an API call to generate the route
-            console.log('Generating route...');
-        });
-        
-        // Q&A functionality
-        const askButton = document.getElementById('askButton');
-        const answerSection = document.getElementById('answerSection');
-        const initialQuestion = document.getElementById('initialQuestion');
-        
-        askButton.addEventListener('click', function() {
-            // Show answer section when question is asked
-            answerSection.classList.remove('d-none');
-            initialQuestion.classList.add('d-none');
-            
-            // In a real app, this would make an API call to get the answer
-            console.log('Asking question...');
-        });
-
-        // Update museum information based on selection
-        const museum = document.getElementById('museum');
-        museum.addEventListener('change', function() {
-            // In a real app, this would fetch museum info from a database
-            console.log('Museum selected:', this.value);
-        });
-    </script>
-</body>
-</html>d-flex align-items-center mb-2">
-                                                <i class="fas fa-tshirt me-2" style="color: var(--primary);"></i>
-                                                <h5 class="mb-0">Coat Check</h5>
-                                            </div>
-                                            <p class="mb-0">Coat check is available near the entrance for your convenience.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <div class="card border-0 mb-4">
-                                        <div class="card-body p-0">
-                                            <div class="d-flex align-items-center mb-2">
-                                                <i class="fas fa-camera me-2" style="color: var(--primary);"></i>
-                                                <h5 class="mb-0">Photography</h5>
-                                            </div>
-                                            <p class="mb-0">Photography is allowed without flash in most galleries.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <div class="card border-0 mb-4">
-                                        <div class="card-body p-0">
-                                            <div class="d-flex align-items-center mb-2">
-                                                <i class="fas fa-check-circle me-2" style="color: var(--primary);"></i>
-                                                <h5 class="mb-0">Avoid Crowds</h5>
-                                            </div>
-                                            <p class="mb-0">Visit early in the morning to avoid crowds, especially on weekends.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <div class="card border-0 mb-4">
-                                        <div class="card-body p-0">
-                                           <div class="d-flex align-items-center mb-2">
-                                                <i class="fas fa-tshirt me-2" style="color: var(--primary);"></i>
-                                                <h5 class="mb-0">Coat Check</h5>
-                                            </div>
-                                            <p class="mb-0">Coat check is available near the entrance for your convenience.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <div class="card border-0 mb-4">
-                                        <div class="card-body p-0">
-                                            <div class="d-flex align-items-center mb-2">
-                                                <i class="fas fa-camera me-2" style="color: var(--primary);"></i>
-                                                <h5 class="mb-0">Photography</h5>
-                                            </div>
-                                            <p class="mb-0">Photography is allowed without flash in most galleries.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <div class="card border-0 mb-4">
-                                        <div class="card-body p-0">
-                                            <div class="d-flex align-items-center mb-2">
-                                                <i class="fas fa-users me-2" style="color: var(--primary);"></i>
-                                                <h5 class="mb-0">Free Tours</h5>
-                                            </div>
-                                            <p class="mb-0">Free guided tours are available daily at 11am and 2pm.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <div class="card border-0 mb-4">
-                                        <div class="card-body p-0">
-                                            <div class="d-flex align-items-center mb-2">
-                                                <i class="fas fa-mountain me-2" style="color: var(--primary);"></i>
-                                                <h5 class="mb-0">Rooftop View</h5>
-                                            </div>
-                                            <p class="mb-0">The rooftop garden offers panoramic views of Central Park.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- MISSING PART 2: Footer -->
-    <footer class="bg-secondary py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h4 class="text-white mb-4">MuseMate</h4>
-                    <p class="text-white-50 mb-4">Art at Your Pace, On Your Path</p>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-                    <h5 class="text-white mb-4">Quick Links</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-2"><a href="#" class="text-white-50">Home</a></li>
-                        <li class="mb-2"><a href="#plan" class="text-white-50">Plan Visit</a></li>
-                        <li class="mb-2"><a href="#ask" class="text-white-50">Ask About Art</a></li>
-                        <li class="mb-2"><a href="#museums" class="text-white-50">Museums</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-                    <h5 class="text-white mb-4">Museums</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-2"><a href="#" class="text-white-50">The Louvre</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50">MET Museum</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50">British Museum</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50">MoMA</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <h5 class="text-white mb-4">Contact Us</h5>
-                    <p class="text-white-50 mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Art Street, New York, NY 10001</p>
-                    <p class="text-white-50 mb-2"><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
-                    <p class="text-white-50 mb-2"><i class="fas fa-envelope me-2"></i> info@musemate.com</p>
-                </div>
-            </div>
-            <div class="border-top border-secondary pt-4 mt-5">
-                <p class="text-white-50 text-center mb-0">&copy; 2025 MuseMate. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- MISSING PART 3: JavaScript functionality -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Update duration value display
